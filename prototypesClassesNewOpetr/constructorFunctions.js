@@ -1,3 +1,5 @@
+// This method creates only copy of the Color prototype rgb, hex, and rgba.
+// So there is only one copy of them across all instances of the Color prototype.
 function Color(r, g, b) {
     this.r = r;
     this.g = g;
@@ -28,6 +30,8 @@ const color1 = new Color(255, 255, 34);
 const color2 = new Color(255, 0, 34);
 
 console.log(color1.rgba(0.4));
-console.log(color1 === color2);
 console.log(color1.hex === color2.hex);
 console.log(document.body.style.backgroundColor = color1.rgba(0.4));
+
+// A better way to write this and keep the codes together and neat
+// Syntatical sugar next.

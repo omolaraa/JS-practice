@@ -1,5 +1,5 @@
-// methods are added to prototype automatically , hence, no need for 
-// Color.Prototype.hex.
+// methods are added to prototype automatically with 'class' and 'constructor',
+// hence, no need for  Color.Prototype.hex.
 class Color {
     constructor (r, g, b, name) {
         this.r = r;
@@ -30,4 +30,4 @@ class Color {
 const red = new Color (255, 67, 89, 'tomato');
 const white = new Color (255, 255, 255, 'white');
 
-console.log(red.rgba(5));
+console.log(red.rgba(0.5));
